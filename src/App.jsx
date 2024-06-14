@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <main className="w-full min-h-screen p-4 grid grid-cols-[10%_1fr] grid-rows-[3rem_1fr]">
+    <main className="w-full min-h-screen p-4 grid grid-cols-[13rem_1fr] grid-rows-[3rem_1fr]">
       <Navbar />
       <Menu />
       <Content />
