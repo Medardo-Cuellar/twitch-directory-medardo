@@ -5,17 +5,17 @@ function Menu() {
   return (
     <aside
       id="Menu"
-      className="col-start-1 col-end-2 row-start-2 row-end-3 bg-[#1f1f23]"
+      className="col-start-1 col-end-2 row-start-2 row-end-3 bg-[#1f1f23] pe-4 pt-2 overflow-y-auto"
     >
-      <h2 className="font-bold">RECOMENDED CHANNELS</h2>
+      <h2 className="font-bold pb-2">RECOMENDED CHANNELS</h2>
       {recomendedChannels.map((channel) => {
         const { avatar, username, game, viewers, isLive } = channel;
         return (
-            <div className="flex">
+            <div className="flex hover:bg-slate-400">
             <div>
-              <img className="rounded h-4 w-4" src={avatar} alt={username} />
+              <img className="rounded h-9 w-9" src={avatar} alt={username} />
               </div>
-              <div className="flex flex-row grow">
+              <div className="flex flex-col grow">
                 <h3 className="font-bold">{username}</h3>
                 <span>{game}</span>
               </div>
