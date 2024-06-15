@@ -11,21 +11,21 @@ const recomendedChannels = [
         "avatar": "https://api.dicebear.com/8.x/pixel-art/svg?seed=elrubius",
         "followers": 32000000,
         "game": "Just Chatting",
-        "live": true
+        "live": false
     },
     {
         "username": "auronplay",
         "avatar": "https://api.dicebear.com/8.x/pixel-art/svg?seed=auronplay",
         "followers": 16000000,
         "game": "Valorant",
-        "live": true
+        "live": false
     },
     {
         "username": "TheGrefg",
         "avatar": "https://api.dicebear.com/8.x/pixel-art/svg?seed=TheGrefg",
         "followers": 14000000,
         "game": "Fortnite",
-        "live": true
+        "live": false
     },
     {
         "username": "Ibai",
