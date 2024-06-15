@@ -7,3 +7,5 @@ function CategoryCard({ image, name, viewers }) {
     </div>
   );
 }
+
+export default CategoryCard 
