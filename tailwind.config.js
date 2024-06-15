@@ -10,7 +10,7 @@ export default {
         "background-twitch": '#18181b',
         "text-twitch": '#fafafa',
         "purple-twitch": '#9147ff',
-        "background-twitch-2": '#19171c',
+        "background-twitch-2": '#0e0e10',
       }
     },
   },

@@ -2,7 +2,7 @@ import TwitchLogo from '../assets/twitch-logo.svg';
 
 export default function Navbar() {
     return (
-        <nav id="navbar" className="col-start-1 col-end-3 grid grid-cols-3">
+        <nav id="navbar" className="col-start-1 col-end-3 grid grid-cols-3 bg-[#18181b]">
             <div>
             <img src={TwitchLogo} alt="Twitch Logo" className="h-8 w-8" />
             </div>
