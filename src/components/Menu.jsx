@@ -1,24 +1,32 @@
-import recomendedChannels from '../data/Channels'
+import recomendedChannels from "../data/Channels";
+import RecomendedChannelsItem from "./RecommendedChannelAside";
 
 function Menu() {
-    return (
-        <aside id="Menu" className="col-start-1 col-end-2 row-start-2 row-end-3 bg-[#1f1f23]">
-            <h2 className="font-bold">RECOMENDED CHANNELS</h2>
-            {recomendedChannels.map((channel) => {
-                return (
-                    <div key={channel.username} className="flex items-center space-x-2">
-                        <img src={channel.avatar} alt="Channel Avatar" className="h-10 w-10 rounded-full" />
-                        <div>
-                            <p className="font-bold">{channel.username}</p>
-                            <p>{channel.followers/1000000} M followers</p>
-                            <p>{channel.game}</p>
-                            {channel.live && <p>Live</p>}
-                        </div>
-                    </div>
-                )
-            })}
-        </aside>
-    )
+  return (
+    <aside
+      id="Menu"
+      className="col-start-1 col-end-2 row-start-2 row-end-3 bg-[#1f1f23]"
+    >
+      <h2 className="font-bold">RECOMENDED CHANNELS</h2>
+      {recomendedChannels.map((channel) => {
+        const { avatar, username, game, viewers, isLive } = channel;
+        return (
+            <div className="flex">
+            <div>
+              <img className="rounded h-4 w-4" src={avatar} alt={username} />
+              </div>
+              <div className="flex flex-row grow">
+                <h3 className="font-bold">{username}</h3>
+                <span>{game}</span>
+              </div>
+              {isLive && <span>🔴</span>}
+              {viewers/1000}K
+            </div>
+        );
+      })}
+
+    </aside>
+  );
 }
 
-export default Menu
+export default Menu;
