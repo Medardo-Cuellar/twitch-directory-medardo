@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="flex items-center justify-center">
                 <input type="text" placeholder="Search" className="w-96 h-8 rounded-lg bg-background-twitch-2 border-text-twitch border p-1" />
             </div>
-            <div className="flex items-center justify-center">
+            <div className="hidden md:flex items-center justify-end me-2">
                 <button className=" bg-purple-twitch text-white px-4 py-1 rounded-lg">Login</button>
             </div>
         </nav>
